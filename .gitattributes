@@ -1,0 +1,134 @@
+# Macro for Unity YAML-based asset files.
+[attr]unityyaml -text merge=unityyamlmerge diff
+
+# Macro for all binary files that should use Git LFS.
+#[attr]lfs -text filter=lfs diff=lfs merge=lfs
+
+# Default to auto-normalized line endings.
+* text=auto
+
+# Code
+*.cs text diff=csharp
+*.gitatttributes text
+*.md text
+*.xml text
+*.shader text
+
+# Unity Text Assets
+*.anim unityyaml
+*.asmdef -text diff
+*.asset unityyaml
+*.brush unityyaml
+*.controller unityyaml
+*.flare unityyaml
+*.fontsettings unityyaml
+*.guiskin unityyaml
+*.giparams unityyaml
+*.mat unityyaml
+*.meta unityyaml
+*.mask unityyaml
+*.mixer unityyaml
+*.overrideController unityyaml
+*.physicMaterial unityyaml
+*.physicsMaterial2D unityyaml
+*.playable unityyaml
+*.prefab unityyaml
+*.preset unityyaml
+*.renderTexture unityyaml
+*.shadervariants unityyaml
+*.spriteatlas unityyaml
+*.terrainlayer unityyaml
+*.xt unityyaml
+*.unity unityyaml
+
+## Unity Binary Assets
+#*.cubemap lfs
+#*.unitypackage lfs
+## Note: Unity terrain assets must have "-Terrain" suffix.
+#*-[Tt]errain.asset -unityyaml lfs
+## Note: Unity navmesh assets must have "-NavMesh" suffix.
+#*-[Nn]av[Mm]esh.asset -unityyaml lfs
+
+## Image
+#*.afdesign lfs
+#*.afphoto lfs
+#*.apng lfs
+#*.atsc lfs
+#*.bmp lfs
+#*.clip lfs
+#*.dds lfs
+#*.exr lfs
+#*.gif lfs
+#*.iff lfs
+#*.jpeg lfs
+#*.jpg lfs
+#*.kpp lfs
+#*.kra lfs
+#*.leo lfs
+#*.pict lfs
+#*.png lfs
+#*.psd lfs
+#*.svg lfs
+#*.svgz lfs
+#*.tga lfs
+#*.tif lfs
+#*.tiff lfs
+#*.webm lfs
+#*.webp lfs
+#*.xcf lfs
+#
+## Audio
+#*.aif lfs
+#*.aiff lfs
+#*.it lfs
+#*.mod lfs
+#*.mp3 lfs
+#*.ogg lfs
+#*.s3m lfs
+#*.wav lfs
+#*.xm lfs
+#
+## Video
+#*.asf lfs
+#*.avi lfs
+#*.flv lfs
+#*.mov lfs
+#*.mp4 lfs
+#*.mpeg lfs
+#*.mpg lfs
+#*.ogv lfs
+#*.wmv lfs
+#
+## 3D
+#*.3dm lfs
+#*.3ds lfs
+#*.abc lfs
+#*.bin lfs
+#*.blend lfs
+#*.blender lfs
+#*.c4d lfs
+#*.dae lfs
+#*.dfx lfs
+#*.fbx lfs
+#*.glb lfs
+#*.lwo lfs
+#*.lwo2 lfs
+#*.ma lfs
+#*.max lfs
+#*.mb lfs
+#*.obj lfs
+#
+## Executables
+#*.exe lfs
+#*.dll lfs
+#*.mdb lfs
+#*.pdb lfs
+#*.so lfs
+#
+## Packaging
+#*.7z lfs
+#*.gz lfs
+#*.rar lfs
+#*.tar lfs
+#*.zip lfs
+#
